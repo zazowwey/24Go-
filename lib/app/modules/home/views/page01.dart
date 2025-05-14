@@ -22,7 +22,7 @@ class FirstPage extends StatelessWidget {
           children: [
 
           Container(
-            margin: EdgeInsets.only(top: 50,), // Jarak atas 20px
+            margin: EdgeInsets.only(top: 26), // Jarak atas 20px
             child: Image.asset(
               "img/PJBL2-IMAGE/ask.jpg",
               width: 350,
@@ -34,7 +34,7 @@ class FirstPage extends StatelessWidget {
         
           Container(
             width: MediaQuery.of(context).size.width,
-            height: 495,
+            height: 450,
             decoration: BoxDecoration(
               color: Color(0xFF36833C),
               borderRadius: BorderRadius.only(
@@ -99,8 +99,7 @@ class FirstPage extends StatelessWidget {
 
                 ),
 
-                SizedBox(height:90),
-
+                SizedBox(height:80),
                    
                 Container(
                   margin: EdgeInsets.only(left: 0),

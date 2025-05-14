@@ -10,6 +10,7 @@ abstract class Routes {
   static const PAGE2 = '/page02';
   static const LOGIN = '/login';
   static const LOAD = '/load';
+  static const MAIN = '/pagemain';
 }
 
 abstract class _Paths {
@@ -20,5 +21,6 @@ abstract class _Paths {
   static const PAGE1 = '/page01';
   static const PAGE2 = '/page02';
   static const LOGIN = '/login';
+  static const MAIN = '/pagemain';
   static const LOAD = '/load';
 }

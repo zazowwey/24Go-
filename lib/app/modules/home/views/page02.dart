@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+// import 'pagemain.dart';
 import 'login.dart';
 
 
@@ -20,6 +21,8 @@ class Page02 extends StatelessWidget {
         child: Column(  
           mainAxisAlignment: MainAxisAlignment.center, // Tengah secara vertikal
           children: [
+
+          
 
           Container(
             margin: EdgeInsets.only(top:50,),
@@ -66,7 +69,7 @@ class Page02 extends StatelessWidget {
                                // Tidak ada border
                               hintText: "Masukkan username anda...",
                               filled: true, // Agar tetap terlihat dengan warna latar belakang
-                              fillColor: Colors.grey[200], // Warna latar belakang input
+                              fillColor: Colors.grey[150], // Warna latar belakang input
                             ),
                           ),
 
@@ -90,7 +93,7 @@ class Page02 extends StatelessWidget {
                                // Tidak ada border
                               hintText: "Masukkan email anda...",
                               filled: true, // Agar tetap terlihat dengan warna latar belakang
-                              fillColor: Colors.grey[200], // Warna latar belakang input
+                              fillColor: Colors.grey[150], // Warna latar belakang input
                             ),
                           ),
 
@@ -114,7 +117,7 @@ class Page02 extends StatelessWidget {
                                // Tidak ada border
                               hintText: "Masukkan password anda...",
                               filled: true, // Agar tetap terlihat dengan warna latar belakang
-                              fillColor: Colors.grey[200], // Warna latar belakang input
+                              fillColor: Colors.grey[150], // Warna latar belakang input
                             ),
                           ),
 
@@ -135,10 +138,10 @@ class Page02 extends StatelessWidget {
                         children: [
 
                           Container(
-                          padding: EdgeInsets.only(top:10,bottom:10),
+                          padding: EdgeInsets.only(top:12,bottom:12),
                           decoration: BoxDecoration(
                             color:Color(0xFF36833C),
-                            borderRadius: BorderRadius.circular(10),
+                            borderRadius: BorderRadius.circular(5),
                           ),
 
                         child: GestureDetector(
@@ -146,7 +149,7 @@ class Page02 extends StatelessWidget {
                             Get.to(() => Login());
                           },
                           child: Padding(
-                            padding: EdgeInsetsDirectional.only(start: 140,end:140),
+                            padding: EdgeInsetsDirectional.only(start: 130,end:130),
                             child: Text("daftar",
                             style: TextStyle(
                               fontFamily: "Poppins-SemiBold",
@@ -176,21 +179,18 @@ class Page02 extends StatelessWidget {
                           Text("Sudah punya akun? Silahkan ",
                             style:TextStyle(
                               fontFamily: "Poppins-Medium",
-                              fontSize:15,
+                              fontSize:13,
                             ),
                           ),
 
                           GestureDetector(
                             onTap: (){
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context) => (Login()))
-                              );
+                              Get.to(() => Login());
                             },
                           child: Text("Masuk",
                             style:TextStyle(
                               fontFamily: "Poppins-Medium",
-                              fontSize:15,
+                              fontSize:13,
                               color: Color(0xFF36833C),
                             ),
                           ),

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+// import 'package:go24/app/modules/home/views/pagemain.dart';
 import '../app/routes/app_pages.dart';
 import 'splash.dart';
+// import '../app/modules/home/views/login.dart';
 
 void main() {
   runApp(MyApp());

@@ -7,6 +7,7 @@ import '../modules/home/views/page01.dart';
 import '../modules/home/views/page02.dart';
 import '../modules/home/views/login.dart';
 import '../modules/home/views/load.dart';
+import '../modules/home/views/pagemain.dart';
 import 'package:go24/splash.dart';
 
 // import '../../splash.dart'; // Pastikan ini import ke splash.dart
@@ -53,6 +54,11 @@ class AppPages {
     GetPage(
       name: _Paths.LOGIN,
       page: () => Login(),
+    ),
+
+    GetPage(
+      name: _Paths.MAIN,
+      page: () => PageMain(),
     ),
 
 
